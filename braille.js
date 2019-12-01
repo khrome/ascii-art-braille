@@ -59,7 +59,6 @@
                 index = h / 4;
                 if(!results[index]) results[index] = [];
                 for(var w = 0; w < width; w+= 4){
-                    console.log(index, w/4, h, w);
                     results[index][w/4] = braille.quadToBraille([
                         map[h].slice(w, w+4),
                         map[h+1].slice(w, w+4),
